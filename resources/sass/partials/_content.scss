@@ -1,6 +1,7 @@
 // MAIN
 main {
     
+    // HOMEPAGE MAIN
     .main-container {
         background-color: #1c1c1c;
         position: relative;
@@ -76,6 +77,95 @@ main {
                         color: white;
                         padding: 0 10px;
                         font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    // PRODUCT-INFO MAIN
+    .product {
+
+        .back-blue {
+            height: 50px;
+            background-color: $brand_color;
+        }
+
+        .small-container {
+            position: relative;
+
+            .product-img {
+                width: 150px;
+                position: absolute;
+                top: -240px;
+                left: 0px;
+            }
+
+            .product-info {
+
+                .info {
+                    width: 60%;
+                    padding: 20px;
+                    margin-top: 10px;
+                    
+                    h1 {
+                        font-size: 20px;
+                    }
+
+                    .availability {
+                        justify-content: space-between;
+                        background-color: #55ba59;
+                        align-items: center;
+                        font-size: 12px;
+                        margin-top: 10px;
+
+                        .price {
+                            width: 50%;
+                            color: #bafd9c;
+                            padding: 10px;
+
+                            .end-price {
+                                color: white;
+                            }
+                        }
+
+                        .available {
+                            width: 20%;
+                            text-align: right;
+                            color: #bafd9c;
+                            text-transform: uppercase;
+                            margin-right: 10px;
+                        }
+
+                        .availability-check {
+                            width: 30%;
+                            color: white;
+                            padding: 10px;
+                            border-left: 1px solid black;
+                            i {
+                                cursor: pointer;
+                            }
+                        }
+
+                    }
+
+                    p {
+                        padding: 20px 0;
+                        font-size: 11px;
+                        font-weight: bold;
+                        line-height: 25px;
+                        color: $text_color;
+                    }
+                }
+
+                .info-img {
+                    width: 40%;
+                    text-align: right;
+                    padding: 20px;
+
+                    h3 {
+                        color: $text_color;
+                        font-size: 14px;
                     }
                 }
             }

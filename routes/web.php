@@ -22,3 +22,25 @@ Route::get('/', function () {
 
     return view('home', $data);
 })->name('home');
+
+Route::get('/product/{id}', function ($id) {
+    $comics = config('comics');
+
+    $product = [];
+    foreach($comics as $item) {
+        if($item['id'] == $id) {
+            $product = $item;
+        }
+    }
+
+    // se non trova prodotto in "$product" stampa errore 404
+    if(empty($product)) {
+        abort('404');
+    }
+
+    $data = [
+        'product' => $product
+    ];
+
+    return view('product', $data);
+})->name('product');

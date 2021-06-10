@@ -20,7 +20,9 @@
                 <div class="single-box">
 
                     <div class="image-box">
-                        <img src="{{ $item['thumb'] }}" alt="{{ $item['series'] }}">
+                        <a href="{{ route('product', ['id' => $item['id']]) }}">
+                            <img src="{{ $item['thumb'] }}" alt="{{ $item['series'] }}">
+                        </a>
                     </div>
 
                     <h3> {{ $item['series'] }} </h3>
